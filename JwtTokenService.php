@@ -23,6 +23,7 @@ class JwtTokenService
      *
      * @param array $payload
      * @param int|null $lifeTime Время жизни токена в секундах
+     *
      * @return string
      */
     public function generate(array $payload, ?int $lifeTime = null): string
@@ -56,6 +57,7 @@ class JwtTokenService
      * Валидация токена
      *
      * @param string $jwt
+     *
      * @return bool
      */
     public function validate(string $jwt): bool
@@ -111,6 +113,7 @@ class JwtTokenService
      * Кодировка в формат base64Url
      *
      * @param string $str
+     *
      * @return string
      */
     public function base64UrlEncode(string $str): string
